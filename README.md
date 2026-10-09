@@ -17,3 +17,9 @@ The website and its Print price list button use the same artworks.json file. Pri
 Upload these five files to the repository root. Once public publication is approved, use Settings → Pages → Deploy from a branch → main → / (root) → Save. A free GitHub Pages deployment requires a public repository. Never upload the full inventory, private notes, local editor, or earlier workbook into this public repository.
 
 The initial setup is a one-time upload. Routine changes are edits directly on GitHub. Publication can take a few minutes. Image files remain hosted on Clare's website.
+
+## Replace the printed QR code
+
+Upload a new PNG to the repository root with exactly the name `clareItalyCatalogueQRCode.png`, replacing the existing file, and commit to main. After GitHub Pages finishes deploying, click Print price list again. Every click requests the QR file afresh and waits for it to load before opening the print dialog. The QR appears at the top right, with its white border preserved. No code changes are needed when replacing the image.
+
+If the site URL changes, generate a QR for the new URL and replace this file. Uploading an image does not change the URL encoded inside it. The print button is at the bottom of the catalog.
